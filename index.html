@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Tourism customer proof · WorldFirst</title>
+<meta name="description" content="Audit of every WorldFirst customer testimonial, case study, interview and quote from a tourism-related business.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wf-red:#FF0051; --wf-red-hover:#E0004A; --wf-gradient-end:#13002D;
+  --wf-text:#1F2323; --wf-text-secondary:#484F56; --wf-text-muted:#69727D;
+  --wf-bg:#FFFFFF; --wf-bg-light:#F5F6F7; --wf-bg-card:#F7F7F7;
+  --wf-border:#ECEDEE; --wf-footer:#1F2323;
+  --live:#0E8A4F; --live-bg:#E8F5EE;
+  --anon:#9A6B00; --anon-bg:#FFF6E0;
+  --off:#B3261E; --off-bg:#FDECEA;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  color:var(--wf-text);background:var(--wf-bg);-webkit-font-smoothing:antialiased;
+  font-size:16px;line-height:1.6;
+}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.container{padding:0 32px}}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--wf-border)}
+.hdr{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--wf-text)}
+.brand svg{height:22px;width:auto;display:block}
+.brand .div{width:1px;height:20px;background:var(--wf-border)}
+.brand .tag{font-size:13px;color:var(--wf-text-muted);font-weight:500;white-space:nowrap}
+nav{display:none;gap:28px}
+@media(min-width:900px){nav{display:flex}}
+nav a{color:var(--wf-text-secondary);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+nav a:hover{color:var(--wf-red)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:50px;padding:14px 32px;font-weight:500;font-size:15px;text-decoration:none;transition:background .2s,border-color .2s,color .2s;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--wf-red);color:#fff}
+.btn-primary:hover{background:var(--wf-red-hover)}
+.btn-secondary{border-color:var(--wf-border);color:var(--wf-text)}
+.btn-secondary:hover{border-color:var(--wf-text-muted)}
+.btn-sm{padding:9px 20px;font-size:13px}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--wf-border)}
+@media(min-width:900px){.hero{padding:96px 0 72px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--wf-red);margin:0 0 20px}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--wf-red)}
+h1{font-size:38px;line-height:1.1;letter-spacing:-.02em;font-weight:600;margin:0 0 24px;max-width:20ch}
+@media(min-width:900px){h1{font-size:58px}}
+.gradient-text{background:linear-gradient(90deg,var(--wf-red) 0%,var(--wf-gradient-end) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.lede{font-size:18px;line-height:1.65;color:var(--wf-text-secondary);max-width:62ch;margin:0 0 32px}
+@media(min-width:900px){.lede{font-size:20px}}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- stats ---------- */
+.stats{background:var(--wf-bg-light);border-bottom:1px solid var(--wf-border)}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--wf-border)}
+@media(min-width:760px){.stats-grid{grid-template-columns:repeat(5,1fr)}}
+.stat{background:var(--wf-bg-light);padding:28px 20px;text-align:center}
+.stat .n{font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1;display:block;margin-bottom:8px}
+@media(min-width:900px){.stat .n{font-size:42px}}
+.stat .l{font-size:12px;color:var(--wf-text-muted);line-height:1.4;display:block}
+.stat.is-live .n{color:var(--live)}
+.stat.is-anon .n{color:var(--anon)}
+.stat.is-off .n{color:var(--off)}
+.stat.is-zero .n{color:var(--wf-red)}
+
+/* ---------- sections ---------- */
+section{padding:64px 0}
+@media(min-width:900px){section{padding:88px 0}}
+.alt{background:var(--wf-bg-light)}
+.sec-head{max-width:70ch;margin:0 0 40px}
+.sec-kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--wf-text-muted);margin:0 0 12px}
+h2{font-size:28px;line-height:1.2;letter-spacing:-.01em;font-weight:600;margin:0 0 16px}
+@media(min-width:900px){h2{font-size:36px}}
+h3{font-size:19px;font-weight:600;margin:0 0 8px;letter-spacing:-.01em}
+.sec-head p{color:var(--wf-text-secondary);margin:0;font-size:16px}
+
+/* ---------- tier label ---------- */
+.tier-label{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:50px;margin-bottom:14px}
+.t-a{background:var(--live-bg);color:var(--live)}
+.t-b{background:var(--anon-bg);color:var(--anon)}
+.t-c{background:var(--off-bg);color:var(--off)}
+
+/* ---------- featured card ---------- */
+.feature{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--wf-border);border-radius:24px;overflow:hidden;background:var(--wf-bg)}
+@media(min-width:900px){.feature{grid-template-columns:1.15fr .85fr}}
+.feature-main{padding:32px}
+@media(min-width:900px){.feature-main{padding:44px}}
+.feature-side{background:var(--wf-bg-light);padding:32px;border-top:1px solid var(--wf-border)}
+@media(min-width:900px){.feature-side{border-top:0;border-left:1px solid var(--wf-border);padding:44px 36px}}
+.feature h3{font-size:26px;margin-bottom:6px}
+.feature .sub{color:var(--wf-text-muted);font-size:14px;margin:0 0 20px}
+.kv{display:grid;grid-template-columns:120px 1fr;gap:10px 16px;font-size:14px;margin:0}
+.kv dt{color:var(--wf-text-muted);font-weight:500}
+.kv dd{margin:0;color:var(--wf-text)}
+.flag{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--wf-border);border-radius:14px;padding:14px 16px;font-size:13.5px;line-height:1.5;margin-top:18px}
+.flag .ic{color:var(--wf-red);font-weight:700;flex-shrink:0;line-height:1.4}
+.flag.warn .ic{color:var(--anon)}
+
+/* ---------- grid cards ---------- */
+.cards{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:760px){.cards.two{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.cards.three{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--wf-border);border-radius:18px;padding:26px;background:var(--wf-bg);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.card p{margin:0 0 14px;font-size:14.5px;color:var(--wf-text-secondary)}
+.card .meta{font-size:13px;color:var(--wf-text-muted);margin:0 0 4px}
+.card .meta strong{color:var(--wf-text);font-weight:600}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:50px;background:var(--wf-bg-light);color:var(--wf-text-secondary);margin:0 6px 6px 0}
+.pill.dead{background:var(--off-bg);color:var(--off)}
+.pill.unk{background:var(--anon-bg);color:var(--anon)}
+
+/* ---------- quotes ---------- */
+details{border-top:1px solid var(--wf-border);margin-top:16px;padding-top:4px}
+details:first-of-type{border-top:0;margin-top:20px;padding-top:0}
+summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--wf-red);list-style:none;padding:10px 0;display:flex;align-items:center;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--wf-bg-light);color:var(--wf-red);font-size:13px;font-weight:600;flex-shrink:0}
+details[open] summary::before{content:"–"}
+blockquote{margin:0 0 10px;padding:16px 18px;background:var(--wf-bg-light);border-left:3px solid var(--wf-red);border-radius:0 10px 10px 0;font-size:14px;line-height:1.65;color:var(--wf-text)}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:12.5px;color:var(--wf-text-muted);font-weight:500}
+
+/* ---------- table ---------- */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--wf-border);border-radius:18px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+thead th{background:var(--wf-bg-light);text-align:left;padding:14px 18px;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--wf-text-muted);border-bottom:1px solid var(--wf-border);white-space:nowrap}
+tbody td{padding:16px 18px;border-bottom:1px solid var(--wf-border);vertical-align:top;color:var(--wf-text-secondary)}
+tbody tr:last-child td{border-bottom:0}
+tbody td strong{color:var(--wf-text);font-weight:600}
+.badge{display:inline-block;font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:50px;white-space:nowrap}
+.badge.yes{background:var(--live-bg);color:var(--live)}
+.badge.part{background:var(--anon-bg);color:var(--anon)}
+.badge.no{background:var(--off-bg);color:var(--off)}
+
+/* ---------- gap list ---------- */
+.gaps{display:grid;grid-template-columns:1fr;gap:14px;margin:0;padding:0;list-style:none}
+@media(min-width:760px){.gaps{grid-template-columns:repeat(2,1fr)}}
+.gaps li{display:flex;gap:12px;padding:18px 20px;border:1px solid var(--wf-border);border-radius:14px;font-size:14.5px;color:var(--wf-text-secondary);background:var(--wf-bg)}
+.gaps li .x{color:var(--wf-red);font-weight:700;flex-shrink:0;line-height:1.4}
+.gaps li strong{color:var(--wf-text);font-weight:600}
+
+/* ---------- steps ---------- */
+.steps{counter-reset:s;display:grid;gap:20px;margin:0;padding:0;list-style:none}
+.steps li{position:relative;padding:26px 26px 26px 74px;border:1px solid var(--wf-border);border-radius:18px;background:var(--wf-bg)}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:26px;top:24px;width:32px;height:32px;border-radius:50%;background:var(--wf-red);color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.steps h3{margin-bottom:6px}
+.steps p{margin:0;font-size:14.5px;color:var(--wf-text-secondary)}
+
+/* ---------- cta ---------- */
+.cta{background:var(--wf-red);color:#fff;border-radius:24px;padding:44px 32px;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+@media(min-width:900px){.cta{flex-direction:row;align-items:center;justify-content:space-between;padding:56px 48px}}
+.cta h2{color:#fff;margin:0 0 10px;font-size:28px}
+@media(min-width:900px){.cta h2{font-size:34px}}
+.cta p{margin:0;color:rgba(255,255,255,.85);max-width:56ch;font-size:15.5px}
+.cta .btn-primary{background:#fff;color:var(--wf-red);white-space:nowrap}
+.cta .btn-primary:hover{background:#fff;color:var(--wf-red-hover)}
+
+/* ---------- method ---------- */
+.method{font-size:13.5px;color:var(--wf-text-muted);line-height:1.7;max-width:80ch}
+.method strong{color:var(--wf-text-secondary);font-weight:600}
+
+/* ---------- footer ---------- */
+footer{background:var(--wf-footer);color:rgba(255,255,255,.6);padding:44px 0;font-size:13px}
+footer .row{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+footer .brand svg{color:#fff}
+footer .brand .tag{color:rgba(255,255,255,.55)}
+footer a{color:rgba(255,255,255,.8);text-decoration:none}
+footer a:hover{color:#fff}
+footer .ln{width:40px;height:2px;background:var(--wf-red);margin-bottom:16px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container hdr">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="WorldFirst">
+        <circle cx="18" cy="20" r="14" stroke="#FF0051" stroke-width="4"/>
+        <path d="M4 20h28M18 6c4.5 4 7 8.7 7 14s-2.5 10-7 14c-4.5-4-7-8.7-7-14s2.5-10 7-14z" stroke="#FF0051" stroke-width="2.6"/>
+        <text x="44" y="27" font-family="Poppins, sans-serif" font-size="19" font-weight="600" fill="currentColor">WorldFirst</text>
+      </svg>
+      <span class="div"></span>
+      <span class="tag">Customer proof audit</span>
+    </a>
+    <nav>
+      <a href="#verdict">Verdict</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#recommendation">Recommendation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="container">
+      <p class="eyebrow"><span class="dot"></span>Search mission · 5 November 2026</p>
+      <h1>Tourism customer <span class="gradient-text">proof</span>, audited</h1>
+      <p class="lede">Every WorldFirst customer testimonial, case study, interview and quote from a tourism-related business, checked across nine internal and public sources. The short answer: we have proof, none of it is Indonesian, and only one piece is both live and named today.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#evidence">See the evidence</a>
+        <a class="btn btn-secondary" href="#coverage">What we checked</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="container" style="padding-left:0;padding-right:0;max-width:1200px">
+      <div class="stats-grid">
+        <div class="stat"><span class="n">11</span><span class="l">Pieces of evidence found</span></div>
+        <div class="stat is-live"><span class="n">1</span><span class="l">Live and named</span></div>
+        <div class="stat is-anon"><span class="n">2</span><span class="l">Live but anonymous</span></div>
+        <div class="stat is-off"><span class="n">7</span><span class="l">Named but offline</span></div>
+        <div class="stat is-zero"><span class="n">0</span><span class="l">From APAC tourism</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERDICT -->
+  <section id="verdict">
+    <div class="container">
+      <div class="sec-head">
+        <p class="sec-kicker">The verdict</p>
+        <h2>Yes, but read the caveats</h2>
+        <p>WorldFirst has tourism customer proof. It is thin, it is British, and most of it is no longer online. Here is the honest shape of it before anyone puts it in front of the Indonesia website team.</p>
+      </div>
+
+      <div class="cards two">
+        <div class="card">
+          <h3>What is live and named today</h3>
+          <p><strong>Grab</strong>, Singapore. A written case study about Grab's corporate travel payments arm, published on 14 site versions including the Indonesia site. No quote, no named spokesperson, no film. WorldFirst tags it Digitalization &amp; GIG-Economy, not tourism.</p>
+        </div>
+        <div class="card">
+          <h3>What is live but anonymous</h3>
+          <p>Two unnamed customer stories on the Airline &amp; Travel Agency vertical page: a Hong Kong airline with 20+ years, and a leading Chinese online travel platform. Both deliberately unnamed. No quotes. Live in seven APAC locales, including Indonesia.</p>
+        </div>
+        <div class="card">
+          <h3>What is named and quotable, but offline</h3>
+          <p>Seven UK tourism businesses with verbatim quotes from named people, lifted from a February 2021 article and two older testimonial pages. Every one of those URLs is dead now. The words survive in our own archive. Permission was never cleared on any of them.</p>
+        </div>
+        <div class="card">
+          <h3>What does not exist</h3>
+          <p>No tourism customer story, quote or film from Indonesia, Malaysia, Singapore, Thailand, Vietnam or the Philippines. Not one. The customer story library has no Indonesia file at all. The Canton Fair 2026 interviews contain zero tourism businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE -->
+  <section id="evidence" class="alt">
+    <div class="container">
+      <div class="sec-head">
+        <p class="sec-kicker">The evidence</p>
+        <h2>Eleven pieces, in three tiers</h2>
+        <p>Grouped by what you can actually do with it. Tier A you can share today. Tier B is sector proof with no attribution. Tier C is real quotes that need re-approval and a new home.</p>
+      </div>
+
+      <!-- TIER A -->
+      <span class="tier-label t-a">Tier A · Live and named</span>
+      <div class="feature">
+        <div class="feature-main">
+          <h3>Grab</h3>
+          <p class="sub">Singapore · operates 900+ cities across eight Southeast Asian countries, including Indonesia</p>
+          <p style="color:var(--wf-text-secondary);font-size:15px;margin:0 0 24px">A superapp. The case study is specifically about its corporate travel and expense arm, Grab For Business: virtual cards for business rides, multi-currency fares, driver payouts, and API reconciliation into client finance systems. It is business travel, not leisure tourism, and WorldFirst files it under Digitalization &amp; GIG-Economy.</p>
+          <dl class="kv">
+            <dt>Format</dt><dd>Written case study page, 692 words English (1,016 Spanish, 815 Korean). No film.</dd>
+            <dt>Live on</dt><dd>worldfirst.com/id/ /sg/ /my/ /th/ /ph/ /au/ /uk/ /global/</dd>
+            <dt>Verified</dt><dd>HTTP 200 on /id/ /sg/ /my/ /th/, checked 5 Nov 2026</dd>
+            <dt>Quote</dt><dd>None. No pull-quote anywhere on the page.</dd>
+            <dt>Permission</dt><dd>Unknown. Published by WorldFirst on 14 site versions; Grab-side approval not evidenced.</dd>
+          </dl>
+          <div class="flag"><span class="ic">!</span><span>Strongest APAC asset we have. Frame it as corporate travel infrastructure, not tourism, and do not imply a quote exists.</span></div>
+        </div>
+        <div class="feature-side">
+          <p class="sec-kicker" style="margin-bottom:16px">Read it</p>
+          <p style="font-size:14px;color:var(--wf-text-secondary);margin:0 0 20px">The Indonesia version is the one to send.</p>
+          <a class="btn btn-primary btn-sm" href="https://www.worldfirst.com/id/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">worldfirst.com/id/…/grab/</a>
+          <p class="sec-kicker" style="margin:28px 0 12px">What the case covers</p>
+          <ul style="margin:0;padding-left:18px;font-size:14px;color:var(--wf-text-secondary);line-height:1.8">
+            <li>Direct payment on World Card, no reimbursements</li>
+            <li>Multi-currency cross-border fares, 24/7 FX</li>
+            <li>Drivers paid to local wallets</li>
+            <li>API reconciliation into client finance systems</li>
+            <li>900+ cities, 8 countries, 50M+ monthly users</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TIER B -->
+      <div style="margin-top:56px">
+        <span class="tier-label t-b">Tier B · Live but anonymous</span>
+        <div class="cards two">
+          <div class="card">
+            <h3>An unnamed Hong Kong airline</h3>
+            <p class="meta"><strong>Market</strong> Hong Kong · <strong>Format</strong> anonymised story block</p>
+            <p>A full-service airline with 20+ years in premium travel. The story is about cutting out GDS intermediaries, taking payments directly from travellers through one API, and settling B2B distribution partners in 20+ currencies.</p>
+            <p class="meta"><strong>Where</strong> the Airline &amp; Travel Agency solutions page, identical on /id/ /sg/ /my/ /th/ /vn/ /ph/ /au/ /uk/ /global/, with a Chinese mirror on .com.cn</p>
+            <span class="pill dead">No name</span><span class="pill dead">No quote</span><span class="pill dead">No external reuse</span>
+            <div class="flag warn" style="margin-top:16px"><span class="ic">!</span><span>Deliberately unnamed, which suggests named clearance was never obtained. Say "a Hong Kong airline" and never a name.</span></div>
+          </div>
+          <div class="card">
+            <h3>An unnamed Chinese online travel platform</h3>
+            <p class="meta"><strong>Market</strong> China · <strong>Format</strong> anonymised story block</p>
+            <p>Described as China's leading online travel platform, with a large and dispersed supplier base. The story is a white-label virtual card programme using a one-card-per-order structure to tie payment to order and cut fraud.</p>
+            <p class="meta"><strong>Where</strong> the .com.cn OTA page only. No English equivalent exists.</p>
+            <span class="pill dead">No name</span><span class="pill dead">No quote</span><span class="pill dead">No external reuse</span>
+            <div class="flag warn" style="margin-top:16px"><span class="ic">!</span><span>Chinese-language page only, which makes it hard to reuse on an Indonesian English site without a translation that WorldFirst has not signed off.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER C -->
+      <div style="margin-top:56px">
+        <span class="tier-label t-c">Tier C · Named and quotable, but offline</span>
+        <p style="color:var(--wf-text-secondary);font-size:15px;max-width:72ch;margin:0 0 24px">Seven UK tourism businesses. Real names, real titles, verbatim quotes. All of it came from WorldFirst's own February 2021 travel-industry article and two older testimonial pages. I re-checked every URL on 5 November 2026: the article redirects to the UK blog index, and both testimonial pages return 404. The text below was recovered from WorldFirst's archive, so it is accurate, but it currently has no public home and no external clearance.</p>
+
+        <div class="cards three">
+
+          <div class="card">
+            <h3>Evergood Travel</h3>
+            <p class="meta"><strong>UK</strong> · tailor-made luxury holidays</p>
+            <p>Trips to New York, Las Vegas, Dubai, the Maldives, South Africa, Australia and Mauritius. Incorporated 2017, ATOL and ABTA bonded, website still trading.</p>
+            <span class="pill dead">Page redirects</span><span class="pill unk">Permission unclear</span>
+            <details>
+              <summary>Read the verbatim quotes</summary>
+              <blockquote>I'm delighted to pay tribute to WorldFirst, who have proven an invaluable partner to my business since its establishment as an independent Tour Operator. We utilise the services of WorldFirst for supplier payments through a myriad of currencies, and while fundamental to the working relationship, I'd say less transactional and more pivotal, is the degree of personal engagement, exemplified in assigning individual account managers to make sure that their support is tailored in the best possible way.
+                <cite>Paul Johnston, Managing Director, Evergood Travel</cite>
+              </blockquote>
+              <blockquote>The mechanisms of the FX market can certainly be complex, varied, nuanced; and I've found WorldFirst very good at understanding the requirements of individual companies. As an industry confirming prices to clients in advance of outlay, we generally manage our FX exposure by utilising forward contracts, a process that is user-friendly and adaptable. As we eventually scale upwards, I have no doubt that their support will align with any new FX demands we face and look forward to the journey. Of course, while I always prefer to look ahead, I should end by saying that their support during the existing Covid-crisis, where the travel industry has faced an unprecedented volume of un-written business, WorldFirst have been excellent.
+                <cite>Paul Johnston, Managing Director, Evergood Travel</cite>
+              </blockquote>
+            </details>
+            <div class="flag" style="margin-top:16px"><span class="ic">!</span><span>Best candidate in the whole set. Named managing director, strongest quote, company still trading. Worth a re-approval ask.</span></div>
+          </div>
+
+          <div class="card">
+            <h3>Odyssey World</h3>
+            <p class="meta"><strong>UK</strong> · tailor-made holidays and safaris</p>
+            <p>Safaris, cultural tours, beach and adventure trips to Africa and Arabia.</p>
+            <span class="pill dead">Page redirects</span><span class="pill unk">Permission declined</span>
+            <details>
+              <summary>Read the verbatim quote</summary>
+              <blockquote>I have worked with WorldFirst both as a Private and Corporate customer for 8 years. I like that the app and the online interface make it really easy to manage our international transfers. Having an Account Manager to contact directly for more complex transactions, such as forward trades, market analysis and service insights has been valuable, especially as we dealt with the impact of Covid-19. James is frequently available and always responds quickly with accurate information and a good understanding of our business needs. This personal service sets WorldFirst aside from most financial institutions and I would have no hesitation in recommending them.
+                <cite>Felicia Severns, Managing Director, Odyssey World</cite>
+              </blockquote>
+            </details>
+            <div class="flag warn" style="margin-top:16px"><span class="ic">!</span><span>Caution: Odyssey World Limited has filed dormant accounts every year since 2020. The trading entity is likely Option To Travel Ltd, same director. Check the account before using this one.</span></div>
+          </div>
+
+          <div class="card">
+            <h3>African Horizons</h3>
+            <p class="meta"><strong>UK</strong> · riding and cycling holidays</p>
+            <p>Holidays in Southern Africa run with Horizon Horseback and Horizon MTB. Pays suppliers in Rand, Pula and USD.</p>
+            <span class="pill dead">Page redirects</span><span class="pill unk">Permission unclear</span>
+            <details>
+              <summary>Read the verbatim quotes</summary>
+              <blockquote>At African Horizons Ltd we work with our partners Horizon Horseback and Horizon MTB to provide the most outstanding riding and cycling holiday destinations in Southern Africa. We use GBP and Euros to regularly pay invoices in foreign currencies such as Rand, Pula and USD. Since collaborating with WorldFirst they have offered us upfront good exchange rates in conjunction with a user-friendly online platform making transactions simple and quick to complete.
+                <cite>Lucy Buchanan, Director, African Horizons Ltd</cite>
+              </blockquote>
+              <blockquote>We particularly value the relationship of trust and mutual respect which has grown over the past three years with Joe, our Relationships Manager. Due to the Covid pandemic, we had to close out the forward contracts we had in place, which was a painful and costly process for our business. Joe supported us along the way, explaining different options and helping to get us through these difficult times.
+                <cite>Lucy Buchanan, Director, African Horizons Ltd</cite>
+              </blockquote>
+            </details>
+          </div>
+
+          <div class="card">
+            <h3>McCabe Pilgrimages</h3>
+            <p class="meta"><strong>UK</strong> · pilgrimage travel</p>
+            <p>A travel company specialising in pilgrimage trips, set up in the early eighties.</p>
+            <span class="pill dead">Page redirects</span><span class="pill unk">Permission declined</span>
+            <details>
+              <summary>Read the verbatim quote</summary>
+              <blockquote>Set up in the early eighties, we at McCabe Pilgrimages are a travel company specialising in pilgrimage trips. As such, we are exposed to different currencies and work with FX regularly. Our previous broker charged us very high spreads, so we decided to switch to WorldFirst. This proved to be a great change for us as we made significant cost-saving and found a trustworthy solution that we are still very happy with today. With Covid-19 causing a huge disruption to the travel industry, we have not been able to operate any tours. WorldFirst's fair and transparent cancellation policy on some large forward contracts that we had to cancel helped us greatly in keeping our cashflow relatively healthy during this difficult period.
+                <cite>Tim Lunn, Project Organiser, McCabe Pilgrimages</cite>
+              </blockquote>
+            </details>
+          </div>
+
+          <div class="card">
+            <h3>Sunvil Holidays</h3>
+            <p class="meta"><strong>UK</strong> · tailor-made holidays since 1970</p>
+            <p>Greece, Cyprus, Portugal and the Azores, Italy, Scandinavia and Latin America. ABTA member, ATOL holder, family-run and independent.</p>
+            <span class="pill dead">404</span><span class="pill unk">Permission declined</span>
+            <details>
+              <summary>Read the verbatim quotes</summary>
+              <blockquote>World First's detailed evaluation of our business and understanding of our foreign exchange requirements has led to Sunvil now having a strong foreign exchange hedging policy which has benefited the group accordingly. In the year that we have been dealing with World First we have not found any fall in service and importantly rates obtained are still competitive. In these volatile times, with the help of World First, we have been able to protect our all-important costing rates and consequently maintained our all too precious profit margins.
+                <cite>Ismet Emin, Group Financial Controller, Sunvil Holidays</cite>
+              </blockquote>
+              <blockquote>World First's detailed evaluation of our business and understanding of our foreign exchange requirements has led to us having a strong foreign exchange policy.
+                <cite>Ismet Emin, Group Financial Controller, Sunvil Holidays</cite>
+              </blockquote>
+            </details>
+          </div>
+
+          <div class="card">
+            <h3>J&amp;C Voyageurs</h3>
+            <p class="meta"><strong>UK</strong> · tailor-made safari holidays</p>
+            <p>Safari holidays across eastern and southern Africa. The only tourism customer film WorldFirst has ever made.</p>
+            <span class="pill">Film, Dec 2017</span><span class="pill">1,904 views</span><span class="pill unk">Permission declined</span>
+            <p style="margin-top:14px">Film on the WorldFirst YouTube channel. The 2016 worldfirst.com page is gone, and no written quote is on file. Worth locating if the Indonesia team specifically needs moving image.</p>
+          </div>
+
+          <div class="card">
+            <h3>World Walks Ltd</h3>
+            <p class="meta"><strong>UK</strong> · walking and cycling holidays</p>
+            <p>Guided, self-guided, pilgrim-route and tailor-made walking holidays.</p>
+            <span class="pill dead">404</span><span class="pill dead">Too thin to use</span>
+            <details>
+              <summary>Read the verbatim quote</summary>
+              <blockquote>We were very happy with the service World First Provided - we will be using you again soon.
+                <cite>"Ann" (no surname or title recorded), World Walks Ltd</cite>
+              </blockquote>
+            </details>
+            <p style="margin-top:14px;font-size:13px;color:var(--wf-text-muted)">Listed for completeness only. 2010 vintage, one line, and no named person.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE -->
+  <section id="coverage">
+    <div class="container">
+      <div class="sec-head">
+        <p class="sec-kicker">Coverage</p>
+        <h2>What we checked, and what came back</h2>
+        <p>Nine sources. This table is the audit trail, so nobody has to repeat the search.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th style="width:26%">Source</th><th style="width:30%">What it holds</th><th style="width:14%">Result</th><th style="width:30%">Detail</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Customer story library</strong><br><span style="font-size:12.5px">Google Drive, 12 regions, 21 files</span></td>
+              <td>Every customer story WorldFirst has already told, region by region. Pick list plus evidence tabs, 8,937 rows grepped.</td>
+              <td><span class="badge part">7 UK hits</span></td>
+              <td>Evergood, Odyssey World, African Horizons, McCabe, Sunvil, World Walks, J&amp;C Voyageurs. All UK, all from dead pages. No Indonesia file exists in the library at all.</td>
+            </tr>
+            <tr>
+              <td><strong>Case study tracker</strong><br><span style="font-size:12.5px">Ross Weldon, 35 cases</span></td>
+              <td>Live case studies with writer, stage, site and preview page.</td>
+              <td><span class="badge no">0 tourism</span></td>
+              <td>Sites covered: SG, AU, NZ, UK, US, Enterprise, DE, NL, MY, TH, TW, VN, KR, JP, PK. No travel or tourism business anywhere.</td>
+            </tr>
+            <tr>
+              <td><strong>Canton Fair 2026 interviews</strong><br><span style="font-size:12.5px">Case tracker plus 63 documents</span></td>
+              <td>Every client interviewed at the October shoot: Turkey, EEA, UK, US, AU/NZ, Malaysia, Korea.</td>
+              <td><span class="badge no">0 tourism</span></td>
+              <td>El Turko, ScaleShip, CindenGitsin, Printbelle, Hammerhart, Hench Hsu, WeeKett, Trendsetter London, TopTier League, Simple Sellers, Zappy, Living Textiles, Uncle Siang, Cikgu Samm, Damagochii. Zero travel keywords across all 63 documents.</td>
+            </tr>
+            <tr>
+              <td><strong>Client questionnaires</strong><br><span style="font-size:12.5px">28 documents</span></td>
+              <td>AU, CN, DE, GLOBAL, KR, MY, NL, NZ, SG, TH, TW, UK and US clients.</td>
+              <td><span class="badge no">0 tourism</span></td>
+              <td>Simple Sellers and Zappy mention hotels and travel only as personal World Card spend, not as their industry. False positive, ruled out.</td>
+            </tr>
+            <tr>
+              <td><strong>Societal APAC slate</strong><br><span style="font-size:12.5px">Oct 2026, production schedule V1</span></td>
+              <td>Regional testimonial programme: 6 countries, 10 films, 20 files, 11 interviewees.</td>
+              <td><span class="badge no">0 tourism</span></td>
+              <td>MY 3 films, SG 2, TH 1, KR 1, TW 1, AU 2. Shoots 26 Oct to 6 Nov, delivery 10 Dec 2026. US$55k ask against a US$50k ceiling. No client names or industries disclosed in the Drive copy.</td>
+            </tr>
+            <tr>
+              <td><strong>worldfirstinternal.org</strong></td>
+              <td>Supposed internal customer story and guest pages.</td>
+              <td><span class="badge no">No content</span></td>
+              <td>Resolves to GitHub Pages. The root is a noindex redirect stub to worldfirst.com, and every plausible guest, story, customer and case-study path returns 404. Not VPN-gated, just a public stub.</td>
+            </tr>
+            <tr>
+              <td><strong>worldfirst.com public site</strong><br><span style="font-size:12.5px">21 locales</span></td>
+              <td>All enterprise customer stories, the travel vertical, and blog stories.</td>
+              <td><span class="badge yes">1 named</span></td>
+              <td>English enterprise roster is only six: AliExpress, BIPO, DeepSeek, Grab, MAISEAT, POIZON. The China roster adds MoreTickets, Aosom, Songmics and Perfect Diary. MAISEAT and MoreTickets are event ticketing, not travel, which is the easy false positive here.</td>
+            </tr>
+            <tr>
+              <td><strong>Airline &amp; Travel Agency vertical</strong></td>
+              <td>Live in seven APAC locales: ID, SG, MY, TH, VN, PH, AU, plus UK and global.</td>
+              <td><span class="badge part">2 anon</span></td>
+              <td>One anonymised Hong Kong airline story in English, one anonymised Chinese OTA story in Chinese. The vertical sells travel actively but carries no named proof. Its form dropdown lists Online Travel Agency as a target segment.</td>
+            </tr>
+            <tr>
+              <td><strong>YouTube and LinkedIn</strong></td>
+              <td>WorldFirst customer films and posts.</td>
+              <td><span class="badge part">1 film</span></td>
+              <td>J&amp;C Voyageurs, December 2017, 1,904 views. Other customer films are PRISM+, CheekyGlo and the Voyage Berlin series. No tourism customer film since 2017.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAPS -->
+  <section class="alt">
+    <div class="container">
+      <div class="sec-head">
+        <p class="sec-kicker">The gap</p>
+        <h2>What does not exist anywhere</h2>
+        <p>Worth stating plainly, because it is the actual answer to the question the Indonesia team asked.</p>
+      </div>
+      <ul class="gaps">
+        <li><span class="x">&times;</span><span><strong>No tourism story from Indonesia.</strong> The customer story library has no Indonesia file at all.</span></li>
+        <li><span class="x">&times;</span><span><strong>None from Malaysia, Singapore, Thailand, Vietnam or the Philippines.</strong> Zero named tourism customers across all five.</span></li>
+        <li><span class="x">&times;</span><span><strong>No tourism business at the Canton Fair 2026 shoot.</strong> Not one of the 15 interviewed clients.</span></li>
+        <li><span class="x">&times;</span><span><strong>No tourism client in the Societal APAC slate.</strong> Ten films across six countries, none identified as tourism.</span></li>
+        <li><span class="x">&times;</span><span><strong>No live named tourism quote anywhere.</strong> Every UK quote is from a page that no longer exists.</span></li>
+        <li><span class="x">&times;</span><span><strong>No cleared permission on any UK tourism quote.</strong> Two were flagged unclear, five declined.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATION -->
+  <section id="recommendation">
+    <div class="container">
+      <div class="sec-head">
+        <p class="sec-kicker">Recommendation</p>
+        <h2>What to send the Indonesia team</h2>
+        <p>Three moves, in order. The first one unblocks them today.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Hand over Grab, honestly framed</h3>
+          <p>Send the Indonesia case study URL. Call it corporate travel infrastructure, not tourism. State plainly that there is no quote and no named spokesperson, so they do not promise one downstream. It is live, it is APAC, and it is already on their own site.</p>
+        </li>
+        <li>
+          <h3>If they need a real tourism quote, re-approve Evergood Travel</h3>
+          <p>Named managing director, the strongest quote in the set, company still trading with a live site, ATOL and ABTA bonded. Permission was only ever flagged unclear, not refused. One account-manager ask gets a tourism quote back online.</p>
+        </li>
+        <li>
+          <h3>Close the vertical gap</h3>
+          <p>We run an Airline &amp; Travel Agency landing page in seven APAC locales, including Indonesia, with anonymous proof only. That is a strategic choice someone made, probably for lack of cleared names. Ask marketing whether named OTA or airline clearance has ever actually been attempted.</p>
+        </li>
+      </ol>
+
+      <div class="cta" style="margin-top:40px">
+        <div>
+          <h2>Want the full quote set as a file?</h2>
+          <p>Every verbatim quote, plus the source by source audit trail and the tiered inventory, sits in the working spreadsheet.</p>
+        </div>
+        <a class="btn btn-primary" href="https://github.com/socialworldfirst/wf-tourism-proof" target="_blank" rel="noopener noreferrer">Open the repo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="alt">
+    <div class="container">
+      <div class="sec-head" style="margin-bottom:24px">
+        <p class="sec-kicker">Method</p>
+        <h2>How this was verified</h2>
+      </div>
+      <p class="method">
+        <strong>Compiled</strong> 5 November 2026, Asia/Shanghai. <strong>Sources</strong> Google Drive (customer story library, case study tracker, Canton interview documents, client questionnaires, Societal slate), the public worldfirst.com estate across 21 locales, and worldfirstinternal.org. <strong>Link checks</strong> every URL in the Tier C set was re-requested on 5 November 2026: the 2021 travel article redirects to the UK blog index, and both testimonial pages return 404. The Grab and travel-vertical URLs returned HTTP 200 on every locale tested. <strong>Text</strong> verbatim quotes were recovered from WorldFirst's own archived full-text documents, not retyped from memory. <strong>Judgement</strong> tiering follows one rule: can it be published with a name attached today. This page carries no unverified claim and no inferred client identity.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="ln"></div>
+    <div class="row">
+      <div class="brand" style="gap:12px">
+        <svg viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="WorldFirst" style="height:20px;width:auto">
+          <circle cx="18" cy="20" r="14" stroke="#FF0051" stroke-width="4"/>
+          <path d="M4 20h28M18 6c4.5 4 7 8.7 7 14s-2.5 10-7 14c-4.5-4-7-8.7-7-14s2.5-10 7-14z" stroke="#FF0051" stroke-width="2.6"/>
+          <text x="44" y="27" font-family="Poppins, sans-serif" font-size="19" font-weight="600" fill="#fff">WorldFirst</text>
+        </svg>
+        <span class="div" style="background:rgba(255,255,255,.2)"></span>
+        <span class="tag">Customer proof audit</span>
+      </div>
+      <div>Tourism proof inventory · 5 November 2026 · internal reference</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
