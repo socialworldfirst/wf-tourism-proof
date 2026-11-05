@@ -94,8 +94,8 @@ header{position:sticky;top:0;z-index:40;background:var(--wf-white);border-bottom
 .brandwrap .sep{width:1px;height:24px;background:var(--wf-light-grey)}
 .brandwrap .tag{font-weight:500;font-size:14px;line-height:1.5;color:var(--neutral-800);white-space:nowrap}
 @media(max-width:640px){.hdr .brandwrap .sep,.hdr .brandwrap .tag{display:none}}
-nav{display:none;gap:28px}
-@media(min-width:900px){nav{display:flex}}
+nav{display:none;gap:8px}
+@media(min-width:1024px){nav{display:flex}}
 nav a{color:var(--wf-grey);text-decoration:none;font-weight:500;font-size:14px;line-height:1.5}
 nav a:hover{color:var(--wf-red)}
 
@@ -109,6 +109,11 @@ nav a:hover{color:var(--wf-red)}
 .btn-secondary{border-color:var(--neutral-300);color:var(--wf-black);background:var(--wf-white)}
 .btn-secondary:hover{border-color:var(--wf-grey)}
 .btn-sm{padding:12px 24px;font-size:14px}
+.btn-xs{padding:9px 16px;font-size:12px}
+.linkrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.linkrow .btn{flex:0 0 auto}
+.linklabel{font-weight:500;font-size:14px;line-height:1.5;color:var(--neutral-800);margin:24px 0 10px}
+.linklabel:first-child{margin-top:0}
 
 /* hero */
 .hero{padding:56px 0 48px}
@@ -265,10 +270,10 @@ footer span.copy{color:var(--neutral-400)}
       </span>
     </a>
     <nav aria-label="Sections">
-      <a href="#verdict">Verdict</a>
-      <a href="#evidence">Evidence</a>
-      <a href="#coverage">Coverage</a>
-      <a href="#recommendation">Recommendation</a>
+      <a class="btn btn-secondary btn-xs" href="#verdict">Verdict</a>
+      <a class="btn btn-secondary btn-xs" href="#evidence">Evidence</a>
+      <a class="btn btn-secondary btn-xs" href="#coverage">Coverage</a>
+      <a class="btn btn-secondary btn-xs" href="#recommendation">Recommendation</a>
     </nav>
   </div>
 </header>
@@ -344,7 +349,6 @@ footer span.copy{color:var(--neutral-400)}
           <p class="body t-body-m">A superapp. The case study is specifically about its corporate travel and expense arm, Grab For Business: virtual cards for business rides, multi-currency fares, driver payouts, and API reconciliation into client finance systems. It is business travel, not leisure tourism, and WorldFirst files it under Digitalization and GIG-Economy.</p>
           <dl class="kv">
             <dt>Format</dt><dd>Written case study page, 692 words English (1,016 Spanish, 815 Korean). No film.</dd>
-            <dt>Live on</dt><dd>worldfirst.com /id/ /sg/ /my/ /th/ /ph/ /au/ /uk/ /global/</dd>
             <dt>Verified</dt><dd>HTTP 200 on /id/ /sg/ /my/ /th/, checked 5 November 2026</dd>
             <dt>Quote</dt><dd>None. No pull-quote anywhere on the page.</dd>
             <dt>Permission</dt><dd>Unknown. Published by WorldFirst on 14 site versions; Grab-side approval not evidenced.</dd>
@@ -353,8 +357,21 @@ footer span.copy{color:var(--neutral-400)}
         </div>
         <div class="feature-side">
           <p class="t-eyebrow" style="color:var(--neutral-800);margin-bottom:16px">Read it</p>
-          <p class="t-body-s" style="color:var(--wf-grey);margin:0 0 20px">The Indonesia version is the one to send.</p>
-          <a class="btn btn-primary btn-sm" href="https://www.worldfirst.com/id/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Open the Indonesia page</a>
+          <p class="t-body-s" style="color:var(--wf-grey);margin:0 0 4px">The Indonesia version is the one to send. All fifteen locales are live, every link below returned HTTP 200 on 5 November 2026.</p>
+          <div class="linkrow">
+            <a class="btn btn-primary btn-sm" href="https://www.worldfirst.com/id/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Indonesia</a>
+          </div>
+          <p class="linklabel">Also live on</p>
+          <div class="linkrow" style="margin-top:0">
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/sg/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Singapore</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/my/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Malaysia</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/th/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Thailand</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/ph/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Philippines</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/vn/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Vietnam</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/au/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Australia</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/uk/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">UK</a>
+            <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/global/enterprise/customer-stories/grab/" target="_blank" rel="noopener noreferrer">Global</a>
+          </div>
           <p class="t-eyebrow" style="color:var(--neutral-800);margin:28px 0 12px">What the case covers</p>
           <ul class="side-list">
             <li>Direct payment on World Card, no reimbursements</li>
@@ -375,6 +392,10 @@ footer span.copy{color:var(--neutral-400)}
             <p>A full-service airline with more than 20 years in premium travel. The story is about cutting out GDS intermediaries, taking payments directly from travellers through one API, and settling B2B distribution partners in more than 20 currencies.</p>
             <p class="meta"><b>Where</b> the Airline and Travel Agency solutions page, identical on /id/ /sg/ /my/ /th/ /vn/ /ph/ /au/ /uk/ /global/, with a Chinese mirror on .com.cn</p>
             <span class="pill dead">No name</span><span class="pill dead">No quote</span><span class="pill dead">No external reuse</span>
+            <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="https://www.worldfirst.com/id/enterprise/solutions/airline-travel-agency/" target="_blank" rel="noopener noreferrer">Indonesia page</a>
+              <a class="btn btn-secondary btn-xs" href="https://www.worldfirst.com/uk/enterprise/solutions/airline-travel-agency/" target="_blank" rel="noopener noreferrer">UK page</a>
+            </div>
             <span class="note plain"><b>Deliberately unnamed</b>, which suggests named clearance was never obtained. Say "a Hong Kong airline" and never a name.</span>
           </div>
           <div class="card">
@@ -383,6 +404,9 @@ footer span.copy{color:var(--neutral-400)}
             <p>Described as China's leading online travel platform, with a large and dispersed supplier base. The story is a white-label virtual card programme using a one-card-per-order structure to tie payment to order and cut fraud.</p>
             <p class="meta"><b>Where</b> the .com.cn OTA page only. No English equivalent exists.</p>
             <span class="pill dead">No name</span><span class="pill dead">No quote</span><span class="pill dead">No external reuse</span>
+            <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="https://www.worldfirst.com.cn/static/platform/solutions/ota/" target="_blank" rel="noopener noreferrer">Chinese page</a>
+            </div>
             <span class="note plain"><b>Chinese-language page only</b>, which makes it hard to reuse on an Indonesian English site without a translation that WorldFirst has not signed off.</span>
           </div>
         </div>
@@ -390,7 +414,7 @@ footer span.copy{color:var(--neutral-400)}
 
       <div style="margin-top:56px">
         <span class="tier-label tier-c">Tier C · Named and quotable, but offline</span>
-        <p class="t-body-m" style="color:var(--wf-grey);max-width:76ch;margin:0 0 24px">Seven UK tourism businesses. Real names, real titles, verbatim quotes. All of it came from WorldFirst's own February 2021 travel-industry article and two older testimonial pages. I re-checked every URL on 5 November 2026: the article redirects to the UK blog index, and both testimonial pages return 404. The text below was recovered from WorldFirst's archive, so it is accurate, but it currently has no public home and no external clearance.</p>
+        <p class="t-body-m" style="color:var(--wf-grey);max-width:76ch;margin:0 0 24px">Seven UK tourism businesses. Real names, real titles, verbatim quotes. All of it came from WorldFirst's own February 2021 travel-industry article and two older testimonial pages. I re-checked every URL on 5 November 2026: the article redirects to the UK blog index, and both testimonial pages return 404. The text below was recovered from WorldFirst's archive, so it is accurate, but it currently has no public home and no external clearance. Where a Wayback Machine snapshot still holds the original page, the card links straight to it; I opened each one to confirm the quote is really on it.</p>
 
         <div class="cards three">
 
@@ -399,7 +423,10 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · tailor-made luxury holidays</p>
             <p>Trips to New York, Las Vegas, Dubai, the Maldives, South Africa, Australia and Mauritius. Incorporated 2017, ATOL and ABTA bonded, website still trading.</p>
             <span class="pill dead">Page redirects</span><span class="pill unk">Permission unclear</span>
-            <details>
+                        <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="http://web.archive.org/web/20220706070611/https://www.worldfirst.com/uk/blog/international-business/client-testimonials/mitigating-currency-risk-travel-industry/" target="_blank" rel="noopener noreferrer">Read it on the archive</a>
+            </div>
+<details>
               <summary>Read the verbatim quotes</summary>
               <!-- CPY-03: the word "utilise" below is inside a verbatim customer quote, reproduced unaltered. -->
               <blockquote>I'm delighted to pay tribute to WorldFirst, who have proven an invaluable partner to my business since its establishment as an independent Tour Operator. We utilise the services of WorldFirst for supplier payments through a myriad of currencies, and while fundamental to the working relationship, I'd say less transactional and more pivotal, is the degree of personal engagement, exemplified in assigning individual account managers to make sure that their support is tailored in the best possible way.
@@ -417,7 +444,10 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · tailor-made holidays and safaris</p>
             <p>Safaris, cultural tours, beach and adventure trips to Africa and Arabia.</p>
             <span class="pill dead">Page redirects</span><span class="pill unk">Permission declined</span>
-            <details>
+                        <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="http://web.archive.org/web/20220706070611/https://www.worldfirst.com/uk/blog/international-business/client-testimonials/mitigating-currency-risk-travel-industry/" target="_blank" rel="noopener noreferrer">Read it on the archive</a>
+            </div>
+<details>
               <summary>Read the verbatim quote</summary>
               <blockquote>I have worked with WorldFirst both as a Private and Corporate customer for 8 years. I like that the app and the online interface make it really easy to manage our international transfers. Having an Account Manager to contact directly for more complex transactions, such as forward trades, market analysis and service insights has been valuable, especially as we dealt with the impact of Covid-19. James is frequently available and always responds quickly with accurate information and a good understanding of our business needs. This personal service sets WorldFirst aside from most financial institutions and I would have no hesitation in recommending them.
                 <cite>Felicia Severns, Managing Director, Odyssey World</cite>
@@ -431,7 +461,10 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · riding and cycling holidays</p>
             <p>Holidays in Southern Africa run with Horizon Horseback and Horizon MTB. Pays suppliers in Rand, Pula and USD.</p>
             <span class="pill dead">Page redirects</span><span class="pill unk">Permission unclear</span>
-            <details>
+                        <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="http://web.archive.org/web/20220706070611/https://www.worldfirst.com/uk/blog/international-business/client-testimonials/mitigating-currency-risk-travel-industry/" target="_blank" rel="noopener noreferrer">Read it on the archive</a>
+            </div>
+<details>
               <summary>Read the verbatim quotes</summary>
               <blockquote>At African Horizons Ltd we work with our partners Horizon Horseback and Horizon MTB to provide the most outstanding riding and cycling holiday destinations in Southern Africa. We use GBP and Euros to regularly pay invoices in foreign currencies such as Rand, Pula and USD. Since collaborating with WorldFirst they have offered us upfront good exchange rates in conjunction with a user-friendly online platform making transactions simple and quick to complete.
                 <cite>Lucy Buchanan, Director, African Horizons Ltd</cite>
@@ -447,7 +480,10 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · pilgrimage travel</p>
             <p>A travel company specialising in pilgrimage trips, set up in the early eighties.</p>
             <span class="pill dead">Page redirects</span><span class="pill unk">Permission declined</span>
-            <details>
+                        <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="http://web.archive.org/web/20220706070611/https://www.worldfirst.com/uk/blog/international-business/client-testimonials/mitigating-currency-risk-travel-industry/" target="_blank" rel="noopener noreferrer">Read it on the archive</a>
+            </div>
+<details>
               <summary>Read the verbatim quote</summary>
               <blockquote>Set up in the early eighties, we at McCabe Pilgrimages are a travel company specialising in pilgrimage trips. As such, we are exposed to different currencies and work with FX regularly. Our previous broker charged us very high spreads, so we decided to switch to WorldFirst. This proved to be a great change for us as we made significant cost-saving and found a trustworthy solution that we are still very happy with today. With Covid-19 causing a huge disruption to the travel industry, we have not been able to operate any tours. WorldFirst's fair and transparent cancellation policy on some large forward contracts that we had to cancel helped us greatly in keeping our cashflow relatively healthy during this difficult period.
                 <cite>Tim Lunn, Project Organiser, McCabe Pilgrimages</cite>
@@ -460,7 +496,10 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · tailor-made holidays since 1970</p>
             <p>Greece, Cyprus, Portugal and the Azores, Italy, Scandinavia and Latin America. ABTA member, ATOL holder, family-run and independent.</p>
             <span class="pill dead">404</span><span class="pill unk">Permission declined</span>
-            <details>
+                        <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="http://web.archive.org/web/20140926072733/http://www.worldfirst.com/for-business/why-us/testimonials/" target="_blank" rel="noopener noreferrer">Read it on the archive</a>
+            </div>
+<details>
               <summary>Read the verbatim quotes</summary>
               <blockquote>World First's detailed evaluation of our business and understanding of our foreign exchange requirements has led to Sunvil now having a strong foreign exchange hedging policy which has benefited the group accordingly. In the year that we have been dealing with World First we have not found any fall in service and importantly rates obtained are still competitive. In these volatile times, with the help of World First, we have been able to protect our all-important costing rates and consequently maintained our all too precious profit margins.
                 <cite>Ismet Emin, Group Financial Controller, Sunvil Holidays</cite>
@@ -476,7 +515,8 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · tailor-made safari holidays</p>
             <p>Safari holidays across eastern and southern Africa. The only tourism customer film WorldFirst has ever made.</p>
             <span class="pill">Film, December 2017</span><span class="pill">1,904 views</span><span class="pill unk">Permission declined</span>
-            <p style="margin-top:14px">Film on the WorldFirst YouTube channel. The 2016 worldfirst.com page is gone, and no written quote is on file. Worth locating if the Indonesia team specifically needs moving image.</p>
+                        <p class="pill dead">Film link not on file</p>
+<p style="margin-top:14px">Film on the WorldFirst YouTube channel. The 2016 worldfirst.com page is gone, and no written quote is on file. Worth locating if the Indonesia team specifically needs moving image.</p>
           </div>
 
           <div class="card">
@@ -484,7 +524,10 @@ footer span.copy{color:var(--neutral-400)}
             <p class="meta"><b>UK</b> · walking and cycling holidays</p>
             <p>Guided, self-guided, pilgrim-route and tailor-made walking holidays.</p>
             <span class="pill dead">404</span><span class="pill dead">Too thin to use</span>
-            <details>
+                        <div class="linkrow">
+              <a class="btn btn-primary btn-sm" href="http://web.archive.org/web/20101224144138/http://www.worldfirst.com/for-business/testimonials/" target="_blank" rel="noopener noreferrer">Read it on the archive</a>
+            </div>
+<details>
               <summary>Read the verbatim quote</summary>
               <blockquote>We were very happy with the service World First Provided - we will be using you again soon.
                 <cite>"Ann" (no surname or title recorded), World Walks Ltd</cite>
@@ -542,7 +585,7 @@ footer span.copy{color:var(--neutral-400)}
               <td>MY 3 films, SG 2, TH 1, KR 1, TW 1, AU 2. Shoots 26 October to 6 November, delivery 10 December 2026. US$55k ask against a US$50k ceiling. No client names or industries disclosed in the Drive copy.</td>
             </tr>
             <tr>
-              <td><b>worldfirstinternal.org</b></td>
+              <td><b>worldfirstinternal.org</b><span class="sm"><a class="btn btn-secondary btn-xs" style="margin-top:8px" href="https://worldfirstinternal.org/" target="_blank" rel="noopener noreferrer">Open the domain</a></span></td>
               <td>Supposed internal customer story and guest pages.</td>
               <td><span class="badge no">No content</span></td>
               <td>Resolves to GitHub Pages. The root is a noindex redirect stub to worldfirst.com, and every plausible guest, story, customer and case-study path returns 404. Not VPN-gated, just a public stub.</td>
@@ -646,7 +689,7 @@ footer span.copy{color:var(--neutral-400)}
         <span class="tag">Customer proof audit</span>
       </span>
       <div class="links">
-        <a href="https://github.com/socialworldfirst/wf-tourism-proof" target="_blank" rel="noopener noreferrer">Source repo</a>
+        <a class="btn btn-secondary btn-xs" style="background:transparent;border-color:var(--wf-grey);color:var(--wf-white)" href="https://github.com/socialworldfirst/wf-tourism-proof" target="_blank" rel="noopener noreferrer">Source repo</a>
         <span class="copy">Tourism proof inventory · 5 November 2026 · internal reference</span>
       </div>
     </div>
