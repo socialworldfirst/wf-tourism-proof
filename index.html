@@ -93,6 +93,7 @@ header{position:sticky;top:0;z-index:40;background:var(--wf-white);border-bottom
 .brandwrap{display:flex;align-items:center;gap:20px}
 .brandwrap .sep{width:1px;height:24px;background:var(--wf-light-grey)}
 .brandwrap .tag{font-weight:500;font-size:14px;line-height:1.5;color:var(--neutral-800);white-space:nowrap}
+@media(max-width:640px){.hdr .brandwrap .sep,.hdr .brandwrap .tag{display:none}}
 nav{display:none;gap:28px}
 @media(min-width:900px){nav{display:flex}}
 nav a{color:var(--wf-grey);text-decoration:none;font-weight:500;font-size:14px;line-height:1.5}
